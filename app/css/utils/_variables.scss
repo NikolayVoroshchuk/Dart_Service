@@ -1,0 +1,24 @@
+// 1. Colors
+// ========================================
+$white: #fff;
+$black: #000;
+$tangaroa: #061e37;
+$heather: #b0bec5;
+$bermuda-grey: #78909c;
+$medium-spring-green: #1de9b6;
+$botticelli: #90a4ae;
+$snow: #fffafa;
+$light-sky-blue: #80d8ff;
+$maya-blue: #82b1ff;
+$biloba-flower: #b388ff;
+$heliotrope: #ea80fc;
+
+// 2. Breakpoints
+// ========================================
+$screen-xs: 375px;
+$screen-md: 768px;
+$screen-lg: 992px;
+
+$max-screen-xs: "all and (max-width: #{$screen-xs})";
+$max-screen-md: "all and (max-width: #{$screen-md})";
+$max-screen-lg: "all and (max-width: #{$screen-lg})";

@@ -1,0 +1,113 @@
+.footer {
+  background-color: $tangaroa;
+  .footer__body {
+    @media #{$max-screen-xs} {
+      max-width: 335px;
+    }
+
+    .content__footer {
+      max-width: 1160px;
+      height: 300px;
+      margin: 0 auto;
+      @media #{$max-screen-md} {
+        height: auto;
+      }
+      @media #{$max-screen-xs} {
+        width: 100%;
+        height: 250px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$max-screen-xs} {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .row__logo {
+          margin-top: 95px;
+          display: flex;
+          @media #{$max-screen-md} {
+            margin-top: 60px;
+          }
+          @media #{$max-screen-xs} {
+            margin-top: 0px;
+          }
+          .logo__wrapper {
+            img {
+              width: 31px;
+              height: 30px;
+            }
+          }
+          p {
+            margin-left: 10px;
+            color: $white;
+          }
+        }
+        .menu__footer {
+          margin-top: 95px;
+          display: flex;
+          align-items: center;
+          @media #{$max-screen-md} {
+            margin-top: 60px;
+          }
+          @media #{$max-screen-xs} {
+            display: block;
+            margin-top: 15px;
+          }
+          li {
+            margin-left: 50px;
+            @media #{$max-screen-xs} {
+              padding: 4px;
+            }
+            a {
+              color: $white;
+              font-size: 15px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$max-screen-md} {
+          justify-content: space-evenly;
+        }
+        .row__privecy {
+          display: flex;
+          margin-top: 55px;
+          @media #{$max-screen-xs} {
+            display: block;
+            margin-top: 10px;
+          }
+          li {
+            @media #{$max-screen-xs} {
+              padding: 3px;
+            }
+            &:not(:first-child) {
+              list-style-type: disc;
+            }
+            color: $white;
+            margin-right: 40px;
+            a {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+        .row__links {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 55px;
+          width: 173px;
+          height: 18px;
+          li {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
